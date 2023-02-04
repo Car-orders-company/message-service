@@ -15,12 +15,12 @@ class TelegramUser:
         self._username = name
 
     @property
-    def first(self):
+    def firstname(self):
         return self._firstname
 
-    @first.setter
-    def first(self, first):
-        self._firstname = first
+    @firstname.setter
+    def firstname(self, firstname):
+        self._firstname = firstname
 
     @property
     def lastname(self):
@@ -31,16 +31,13 @@ class TelegramUser:
         self._lastname = last
 
     @property
-    def active(self):
+    def is_active(self):
         return self._is_active
 
-    @active.setter
-    def active(self, active):
-        self._is_active = active
+    @is_active.setter
+    def is_active(self, is_active):
+        self._is_active = is_active
 
     @property
     def chat_id(self):
         return self._chat_id
-
-
-
